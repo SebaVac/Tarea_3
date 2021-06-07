@@ -12,11 +12,13 @@
 * Felix Lazcano: 0
 ---
 
-* Posibles errores
---
+**Observaciones sobre el codigo**
+---
+
+Las opciones 1,2(...) del menu funcionan de manera correcta.
 
 ---
-**Observaciones**
+**Observaciones sobre estudiantes**
 --
 
 Acdiel: 

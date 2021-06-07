@@ -3,34 +3,28 @@
 #include <stdlib.h>
 #include "list.h"
 
-typedef struct Nodo{
+typedef struct Vector{
   int x;//primer numero
   int y;//segundo numero
   char* nombre;
-}Nodo;
+}Vector;
 
 typedef struct Recorrido{
-  char * nombre;
-  List * vector;
-  int distancia;
+    char* nombre;
+    List* direccion;
+    float distancia;
 }Recorrido;
 
-typedef struct recorrido2{
-  Nodo* nodo1;
-  Nodo* Nodo2;
-  int distancia;
-}recorrido2;
-
 typedef struct Posicion{
-  int id;
-  Vector * vector;
-  int distancia;
+    Vector* vec;
+    int id;
+    float distance;
 }Posicion;
 
 
-Nodo* createNode(){
+Vector* crearVector(){
 
-  Nodo* nuevo = (Nodo*)malloc(sizeof(Nodo));
+  Vector* nuevo = (Vector*)malloc(sizeof(Vector));
 
   nuevo->x = 0;
   nuevo->y = 0;
@@ -73,37 +67,15 @@ void distancia_entre_entregas(int x1,int y1,int x2,int y2){
 void mostrar_entregas_cercanas(int x, int y){
   
   
-
 }
-
-
 void crear_ruta(int x, int y){
-
-
-
 }
-
-
 List* crear_ruta_aleatoria(int x, int y){
-
-
-
-
   return ;
 }
-
-
 void Modificar_ruta(char* nombre){
-
-
-
 }
-
-
 void mostrar_ruta(){
-
-
-
 }
 */
 
