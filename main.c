@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "list.h"
-//include "Grafos.c"
+#include "Grafos.h"
+
 
 const char *get_csv_field (char * tmp, int k) {
   int open_mark = 0;
@@ -70,13 +71,13 @@ List* L = createList();
   }
 
   /*menu*/
-    int op,tope;
+    int op,tope,x1,y1,x2,y2;
     while(op!=0)
     {
         printf("---------------------------------------------------\n");
         printf("1.- Importar Coordenadas\n");
         printf("2.- Distancia entre dos entregas\n");
-        printf("3.- Mostrar 3 entregas más cercanas a las coordenadas ingresad\n");
+        printf("3.- Mostrar 3 entregas más cercanas a las coordenadas ingresadas\n");
         printf("4.- Crear ruta\n");
         printf("5.- Generar ruta aleatoria\n");
         printf("6.- Mejorar ruta\n");
@@ -86,15 +87,18 @@ List* L = createList();
         printf("---------------------------------------------------\n");
         printf("Indica la opcion: ");
         scanf("%d", &op);
+        printf("\n");
 
         switch(op)
         {   
-            case 0: return 0;
+            case 0: 
+            
+            return 0;
             break;
 
             case 1:
             printf("IMPORTAR COORDENADAS: \n");
-            printf("Ingresar cantidad de lineas de coordenadas: ");
+            printf("Ingresar primeras n lineas de coordenadas: ");
             scanf("%i",&tope);
             printf("\n");
             printf ("  x  |  y");
@@ -116,15 +120,45 @@ List* L = createList();
             break;
 
             case 2:
+
+            
+            printf("Ingresar coordenadas\n");
+            printf("Coordenadas de la entrega 1:\n");
+            printf("x: ");
+            scanf("%i", &x1);
+            printf("y: ");
+            scanf("%i", &y1);
+
+            printf("\nCoordenadas de la entrega 2:\n");
+            printf("x: ");
+            scanf("%i",&x2);
+            printf("y: ");
+            scanf("%i", &y2);
+            
+            distancia_entre_entregas(x1,y1,x2,y2);
+            
             break;
 
             case 3:
+
+            printf("Ingresar coordenadas\n");
+            printf("x: ");
+            scanf("%i", &x1);
+            printf("y: ");
+            scanf("%i", &y1);
+
+            if(x1)
+            
             break;
 
-            case 4: 
+
+            case 4:
+             
             break;
 
             case 5:
+            
+            
             break;
 
             case 6:
