@@ -1,7 +1,9 @@
 #include <stdio.h>
-#include <math.h>
 #include <stdlib.h>
+#include <string.h>
+#include <math.h>
 #include "list.h"
+#include "Map.h"
 
 typedef struct Vector{
   int x;//primer numero
@@ -62,7 +64,20 @@ void distancia_entre_entregas(int x1,int y1,int x2,int y2){
   
 }
 
-//a partir de aqui, se usan listas//
+Recorrido* crearRuta(Map* posibles, int random)
+{
+    int x, y;
+    Recorrido* camino;
+
+    printf("Ingrese coordenada X: ");
+    scanf("%i", &x);
+    printf("Ingrese coordenada Y: ");
+    scanf("%i", &y);
+
+
+    return camino;
+}
+
 /*
 void mostrar_entregas_cercanas(int x, int y){
   
@@ -70,11 +85,10 @@ void mostrar_entregas_cercanas(int x, int y){
 }
 void crear_ruta(int x, int y){
 }
-List* crear_ruta_aleatoria(int x, int y){
-  return ;
-}
+
 void Modificar_ruta(char* nombre){
 }
+
 void mostrar_ruta(){
 }
 */

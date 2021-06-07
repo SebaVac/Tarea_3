@@ -4,6 +4,8 @@
 #include <string.h>
 #include "list.h"
 #include "Grafos.h"
+#include "Direcciones.h"
+#include "Map.h"
 
 
 const char *get_csv_field (char * tmp, int k) {
@@ -72,6 +74,7 @@ List* L = createList();
   }
 
   /*menu*/
+    Recorrido* camino;
     int op,tope,x1,y1,x2,y2;
     while(op!=0)
     {
@@ -154,6 +157,8 @@ List* L = createList();
 
 
             case 4:
+              camino = crearRuta(posiblesVec2, 0);
+              printCamino(camino);
             break;
 
             case 5:
