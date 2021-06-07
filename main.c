@@ -4,7 +4,6 @@
 #include <string.h>
 #include "list.h"
 #include "Grafos.h"
-#include "Map.h"
 
 
 const char *get_csv_field (char * tmp, int k) {
@@ -71,9 +70,6 @@ List* L = createList();
     printf("%d", *aux);
     aux = prev(L);
   }
-
-  //mapa
-  Map* posiblesVec2 = createMap(is_equal_int);
 
   /*menu*/
     int op,tope,x1,y1,x2,y2;
